@@ -238,12 +238,6 @@ export default {
                     this.checkedComments.splice(commentIndex, 1);
                 }
             }
-            console.log(
-                postId,
-                commentId,
-                this.checkedComments,
-                this.deletedCommentsPostId
-            );
         },
         deleteComments() {
             axios
