@@ -171,7 +171,9 @@ export default {
             };
 
             let formData = new FormData();
-            formData.append("photo", this.photo);
+            if (this.photo) {
+                formData.append("photo", this.photo);
+            }
             formData.append("title", this.fields.title);
             formData.append("body", this.fields.body);
             axios
@@ -188,7 +190,6 @@ export default {
         },
 
         edit(id) {
-            console.log("edit");
             this.postEdit = id;
             this.fields = this.posts.find((post) => {
                 return post.id == id;

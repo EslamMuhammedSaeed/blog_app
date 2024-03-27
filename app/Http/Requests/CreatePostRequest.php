@@ -33,7 +33,7 @@ class CreatePostRequest extends FormRequest
                 "string"
             ],
             "photo" => [
-                "file"
+                "file", "mimes:png,jpg"
             ]
         ];
     }

@@ -28,7 +28,7 @@
                     <input type="file" class="custom-file-input" name="photo" id="photo" />
                 </div>
                 @error('photo')
-                    <span class="invalid-feedback" role="alert">
+                    <span class="text-danger" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror

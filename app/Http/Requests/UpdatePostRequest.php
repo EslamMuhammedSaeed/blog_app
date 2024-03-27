@@ -30,8 +30,11 @@ class UpdatePostRequest extends FormRequest
             "body" => [
                 "required",
                 "string"
+            ],
+            "photo" => [
+                "nullable",
+                "mimes:jpg,png"
             ]
-
         ];
     }
 }
