@@ -28,7 +28,7 @@ Route::group(
     ],
     function () {
         Route::get('/', function () {
-            return view('welcome');
+            return redirect('/home');
         });
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
         Route::controller(FacebookController::class)->group(function () {
